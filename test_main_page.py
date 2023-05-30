@@ -29,7 +29,6 @@ class TestLoginFromMainPage:
         page.should_be_login_link()
 
 
-@pytest.mark.skip
 def test_guest_should_see_login_url_on_login_page(browser):
     link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
     page = LoginPage(browser, link)
@@ -37,7 +36,6 @@ def test_guest_should_see_login_url_on_login_page(browser):
     page.should_be_login_url()
 
 
-@pytest.mark.skip
 def test_guest_should_see_login_form_on_login_page(browser):
     link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
     page = LoginPage(browser, link)
@@ -45,7 +43,6 @@ def test_guest_should_see_login_form_on_login_page(browser):
     page.should_be_login_form()
 
 
-@pytest.mark.skip
 def test_guest_should_see_register_form_on_login_page(browser):
     link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
     page = LoginPage(browser, link)
